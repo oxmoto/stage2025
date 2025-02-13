@@ -17,7 +17,7 @@ VM:
 runstate = True
 while runstate:
     ....
-    if choice="extit"
+    if choice == "extit":
         runstate = False
 """
 # Variables
@@ -34,11 +34,13 @@ def get_host_number():
     nbr_host = 0
     while nbr_host <= 1:
         try:
-            nbr_host = int(input("Entrez le nombre de host (en chiffre, 2 MINIMUM) : "))
+             nbr_host = int(input("Entrez le nombre de host  ( en chiffre, min 2 ) : "))
+
         except ValueError as err:
             print("Vous n'avez pas entré un nombre!")
             continue
     return nbr_host
+
 
 # fonction calculate
 def calculate(nbr_host_core, nbr_host_RAM, nbr_VM_core, nbr_VM_RAM, nbr_nbr_host):
@@ -58,5 +60,3 @@ def main():
     resultat = resultat * 0.8
     print(f"vois si le nombre de VM que tu peux mettre dans ton cluster :{int(resultat)}")
 
-if __name__ == '__main__':
-    main()
