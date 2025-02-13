@@ -22,7 +22,3 @@ btn3.pack(side=tk.TOP)
 btn4.pack(side=tk.BOTTOM)
 
 gui.mainloop()
-
-def menu(list_entrees):
-    """ton code ici"""
-    return strchoisi
