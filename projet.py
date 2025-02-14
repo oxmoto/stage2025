@@ -3,22 +3,34 @@
 from fanction import memu
 from fanction import main
 from fanction import calcule
-from fanction import get_host_number
+from fanction import get_host_number1
 
+valeur = {
+    "nbr_host": 0,
+    "host_core": 20,
+    "host_RAM": 512,
+    "VM_core": 2,
+    "VM_RAM": 4
+}
 
-while True:
-    list_chois = ["calcule", "taille_VM", "taille_hosts"]
-    chois = memu(list_chois)
-    if chois == "calcule":
-        calcule()
-    if chois == "taille_VM":
-        main()
-    if chois == "taille_hosts":
-        get_host_number()
-    if chois == "exit":
-        print("exit")
-        exit()
-        break
+def handle_memu():
+    while True:
+        list_chois = ["calcule", "taille_VM", "taille_hosts"]
+        chois = memu(list_chois)
+        if chois == "calcule":
+            false = calcule()
+            return
+        if chois == "taille_VM":
+            false = main()
+            return
+        if chois == "taille_hosts":
+            false = get_host_number1()
+            return
+        if chois == "exit":
+            exit()
+    if not false:
+        return false
+handle_memu()
 
 liste_string = ["calcule", "taille_VM", "taille_hosts"]
 memu(liste_string)
