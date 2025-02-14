@@ -5,14 +5,6 @@ from fanction import main
 from fanction import calcule
 from fanction import get_host_number1
 
-valeur = {
-    "nbr_host": 0,
-    "host_core": 20,
-    "host_RAM": 512,
-    "VM_core": 2,
-    "VM_RAM": 4
-}
-
 def handle_memu():
     while True:
         list_chois = ["calcule", "taille_VM", "taille_hosts"]
@@ -30,9 +22,6 @@ def handle_memu():
             exit()
 
 handle_memu()
-
-liste_string = ["calcule", "taille_VM", "taille_hosts"]
-memu(liste_string)
 
 """
 Programe de calcul de ressource de virtualisation
