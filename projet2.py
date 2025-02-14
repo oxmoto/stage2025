@@ -2,13 +2,13 @@ import tkinter as tk
 from tkinter import messagebox
 
 def msgCallBack():
-     messagebox.showinfo ("App", "Le bouton est cliqué")
+     messagebox.showinfo ("App", "et sa c'est l'extreme gauche")
 def msgCallBack2():
-    messagebox.showwarning("App", "se si est la droite")
+    messagebox.showwarning("App", "se si est l'extreme droite")
 def msgCallBack3():
-    messagebox.showerror("App", "c'est se que tu mas demander")
+    messagebox.showerror("App", "et sa c'est le haut")
 def msgCallBack4():
-    messagebox.askquestion("App", "j'ai juste oui ou non")
+    messagebox.askquestion("App", "sa c'est le bas")
 
 gui = tk.Tk()
 btn1 = tk.Button(gui, text="gauche", command=msgCallBack, activeforeground="green", activebackground="yellow", padx=8, pady=5)
