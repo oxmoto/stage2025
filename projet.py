@@ -21,8 +21,6 @@ def handle_memu():
         if chois == "exit":
             exit()
 
-handle_memu()
-
 """
 Programe de calcul de ressource de virtualisation
 
@@ -54,4 +52,4 @@ utiliser boucle while avec une var run initialise a True
 """
 
 if __name__ == '__main__':
-    main()
+    handle_memu()
