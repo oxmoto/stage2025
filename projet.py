@@ -18,18 +18,17 @@ def handle_memu():
         list_chois = ["calcule", "taille_VM", "taille_hosts"]
         chois = memu(list_chois)
         if chois == "calcule":
-            false = calcule()
+            calcule()
             return
         if chois == "taille_VM":
-            false = main()
+            main()
             return
         if chois == "taille_hosts":
-            false = get_host_number1()
+            get_host_number1()
             return
         if chois == "exit":
             exit()
-    if not false:
-        return false
+
 handle_memu()
 
 liste_string = ["calcule", "taille_VM", "taille_hosts"]
