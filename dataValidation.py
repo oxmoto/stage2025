@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+# se n'ai pa smoi qui les fait c'est mon tuteur de stage qui la fait
+
 """
 All fonction to validate data
 """
